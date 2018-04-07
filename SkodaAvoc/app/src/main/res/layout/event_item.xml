@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:innerRadius="100dp"
+        android:shape="ring"
+        app:cardCornerRadius="34dp"
+        app:cardElevation="15dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/textViewHead"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Heading"
+                android:gravity="center"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Title" />
+
+            <TextView
+                android:id="@+id/textViewDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:layout_alignTop="@+id/image"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:id="@+id/textViewRegion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Region"
+                android:layout_alignTop="@+id/image"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="36dp" />
+
+            <TextView
+                android:id="@+id/textViewObec"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Obec"
+                android:layout_below="@+id/textViewRegion"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="12dp" />
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:foregroundGravity="center"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/textViewHead"
+                android:layout_marginTop="11dp"
+                android:background="@drawable/event" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
